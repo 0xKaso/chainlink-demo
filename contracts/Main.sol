@@ -2,11 +2,11 @@ pragma solidity ^0.8.7;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
-contract Name {
+contract Main {
     AggregatorV3Interface btcPrice;
 
     constructor() {
-        btcPrice = AggregatorV3Interface(0xa81FE04086865e63E12dD3776978E49DEEa2ea4e);
+        btcPrice = AggregatorV3Interface(0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e);
     }
 
     function getBtcPrice() public view returns(int) {
